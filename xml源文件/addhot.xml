@@ -1,0 +1,28 @@
+﻿<krpano >
+
+
+
+	
+	<!-- 动态添加评论热点，作为用户头像与评论内容父元素 -->
+	<action name="ecpanoAddhot">
+		copy(sceneindex,scene[get(xml.scene)].index);
+		set(hsname,%1);
+		addhotspot(get(hsname));
+		set(hotspot[get(hsname)].url,'http://txcloud.say.ecpano.com/say/messagebox.png');
+		set(hotspot[get(hsname)].ath,%2);
+		set(hotspot[get(hsname)].atv,%3);
+		set(hotspot[get(hsname)].scale,0.5);
+		set(hotspot[get(hsname)].ondown,'ecpanoDrag()');
+		ecpanoAddpli(%4);
+		ecpanoAddplt(%5);	
+	</action>
+
+
+	
+
+	
+
+
+
+
+</krpano>

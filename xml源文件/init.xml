@@ -1,0 +1,21 @@
+﻿<krpano  >
+
+
+
+   <!-- 初始化加载 -->
+<!-- 	<action name="global" secure="false"  autorun="onstart">
+		js(globalPanoEnter(););
+	</action>
+
+    <events name="panoitf" keep="true"
+            onloadcomplete="js(scenePanoEnter(););"
+         /> -->
+
+         	<action name="global" secure="false"  autorun="onstart">
+		js(globalPanoEnter(););
+	</action>
+
+    <events name="panoitf" keep="true"
+            onloadcomplete="js(scenePanoEnter(););"
+         />
+</krpano>

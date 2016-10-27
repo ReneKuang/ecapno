@@ -1,0 +1,29 @@
+﻿<krpano >
+
+
+
+
+
+<!-- 动态添加评论内容 -->
+<action name="ecpanoAddplt">
+			set(pltname,%1);
+			addplugin(get(pltname));
+			set(plugin[get(pltname)].url,'http://txcloud.say.ecpano.com/say/textfield.swf');
+			set(plugin[get(pltname)].parent,get(parentname));
+			set(plugin[get(pltname)].align,'lefttop');
+			set(plugin[get(pltname)].x,26);
+			set(plugin[get(pltname)].y,-6);
+			set(plugin[get(pltname)].backgroundcolor,0x30ef11); 
+			set(plugin[get(pltname)].backgroundalpha,0.9); 
+			set(plugin[get(pltname)].height,30);
+			set(plugin[get(pltname)].enabled,true);
+			set(plugin[get(pltname)].ondown,'e8d33bf8f669f235c336d23d212c4()');
+			set(plugin[get(pltname)].capture,false);
+			set(plugin[get(pltname)].css,'padding:0 10px;color:#fff;line-height:28px;box-sizing:border-box;font-size:16px;font-family:微软雅黑;letter-spacing:3px;');
+			set(plugin[get(pltname)].html,'[b]拖动我到指定位置[/b]');
+</action>
+
+
+
+
+</krpano>

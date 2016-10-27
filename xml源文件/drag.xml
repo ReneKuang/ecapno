@@ -1,0 +1,37 @@
+﻿<krpano >
+
+
+
+
+
+	<!-- 移动热点 -->
+	<action name="ecpanoDrag">
+		
+		if(%1 != dragging,
+			spheretoscreen(ath, atv, hotspotcenterx, hotspotcentery);
+			sub(drag_adjustx, mouse.stagex, hotspotcenterx); 
+			sub(drag_adjusty, mouse.stagey, hotspotcentery); 
+			ecpanoDrag(dragging);
+		  ,
+			if(pressed,
+				sub(dx, mouse.stagex, drag_adjustx);
+				sub(dy, mouse.stagey, drag_adjusty);
+				screentosphere(dx, dy, ath, atv);
+				copy(print_ath, ath);
+				copy(print_atv, atv);
+				set(hlookat,get(ath));
+				set(vlookat,get(atv));
+				
+				delayedcall(0, ecpanoDrag(dragging) );
+			  );
+		  );
+	
+	</action>
+
+
+
+
+
+
+
+</krpano>
