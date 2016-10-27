@@ -1,0 +1,104 @@
+﻿<krpano >
+
+
+
+	<!-- 说一说按钮 -->
+	<layer name="say" keep="true" align="right" width="40" height="40" x="15" y="-85" visible="true" onclick="jscall(t.addsay();)">
+   		<layer name="say_text"
+			   url="%SWFPATH%/plugins/textfield.swf"
+			   html="说一说"
+			   keep="true"
+			   visible="true"
+			   align="top"
+			   y="40"
+			   css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+			   backgroundalpha="0"
+   			/>
+
+	</layer>
+
+
+	<!-- 显示评论 -->
+	<layer name="showHot"
+		   keep="true"
+		   align="right"
+		   width="40"
+		   height="40"
+		   x="15"
+		   y="0"
+		   visible="true"
+		   onclick="jscall(t.hideHot();)"
+		   >
+		   <layer name="show_text"
+			   url="%SWFPATH%/plugins/textfield.swf"
+			   html="隐藏"
+			   keep="true"
+			   visible="true"
+			   align="top"
+			   y="40"
+			   css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+			   backgroundalpha="0"
+   			/>
+	</layer>
+
+
+	<!-- 隐藏评论 -->
+	<layer name="hideHot"
+		   keep="true"
+		   align="right"
+		   width="40"
+		   height="40"
+		   x="15"
+		   y="0"
+		   visible="false"
+		   onclick="jscall(t.showHot();)"
+		   >
+		    <layer name="hide_text"
+			   url="%SWFPATH%/plugins/textfield.swf"
+			   html="显示"
+			   keep="true"
+			   visible="true"
+			   align="top"
+			   y="40"
+			   css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+			   backgroundalpha="0"
+   			/>
+	</layer>
+
+
+	<!-- 点赞按钮 -->
+	<layer name="praise"
+		   keep="true"
+		   align="right"
+		   width="40"
+		   height="40"
+		   x="15"
+		   y="85"
+		   visible="true"
+		   onclick="jscall(c();)">
+		   	<layer name="praise_text"
+			   url="%SWFPATH%/plugins/textfield.swf"
+			   keep="true"
+			   visible="true"
+			   align="top"
+			   y="40"
+			   css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+			   backgroundalpha="0"
+   			/>
+	</layer>
+
+	
+	<!-- 人气 -->
+	<layer name="readCount"
+		       url="%SWFPATH%/plugins/textfield.swf"
+		       keep="true"
+			   visible="true"
+			   align="lefttop"
+			   x="20"
+			   y="20"
+			   css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:16px;"
+			   backgroundalpha="0"
+
+	/>
+
+</krpano>

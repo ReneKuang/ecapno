@@ -1,0 +1,24 @@
+﻿<krpano >
+
+
+<!-- 动态添加评论头像 -->
+<action name="ecpanoAddpli">
+		set(pliname,%1);
+		addplugin(get(pliname));
+		set(plugin[get(pliname)].scale,0.35);
+		set(plugin[get(pliname)].width,100);
+		set(plugin[get(pliname)].height,100);
+		txtadd(parentname,'hotspot[',get(hsname),']');
+		set(plugin[get(pliname)].parent,get(parentname));
+		set(plugin[get(pliname)].align,'centertop');
+		set(plugin[get(pliname)].y,-10);
+		set(plugin[get(pliname)].enabled,true);
+		set(plugin[get(pliname)].capture,false);
+	</action>
+
+
+
+
+
+
+</krpano>

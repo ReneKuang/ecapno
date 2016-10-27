@@ -1,0 +1,17 @@
+﻿<krpano >
+
+
+
+
+
+	<include url="init.xml" />
+	<include url="layer.xml" />
+	<include url="addhot.xml" />
+	<include url="addpli.xml" />
+	<include url="addplt.xml" />
+	<include url="drag.xml" />
+	
+
+	
+
+</krpano>
